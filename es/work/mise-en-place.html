@@ -157,6 +157,26 @@
             text-align: center;
         }
 
+        .case-video-wrap {
+            position: relative;
+            width: 100%;
+            max-width: 720px;
+            padding-top: 56.25%;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: 0 30px 80px rgba(20,33,61,0.14);
+        }
+
+        .case-video-wrap iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         .case-web-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -326,7 +346,7 @@
 
                 <div class="case-truck-photo">
                     <img
-                        src="../../images/work/mise-en-place/cover.png"
+                        src="../../images/work/mise-en-place/cover.jpg"
                         alt="Food truck de Mise en Place con banner y pantalla de TV en uso"
                     >
                 </div>
@@ -358,12 +378,12 @@
                     </figure>
 
                     <figure>
-                        <img src="../../images/work/mise-en-place/business-cards/1.png" alt="Mise en Place business card, logo side">
+                        <img src="../../images/work/mise-en-place/business-card-front.jpg" alt="Tarjeta de presentación de Mise en Place, lado del logo">
                         <figcaption>Tarjeta de presentación, frente</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="../../images/work/mise-en-place/business-cards/2.png" alt="Mise en Place business card, reverse side">
+                        <img src="../../images/work/mise-en-place/business-card-back.jpg" alt="Tarjeta de presentación de Mise en Place, lado con información de contacto y código QR de pedidos">
                         <figcaption>Tarjeta de presentación, reverso — información de contacto y código QR de pedidos</figcaption>
                     </figure>
                 </div>
@@ -385,13 +405,36 @@
 
                 <div class="case-banner-pair">
                     <figure>
-                        <img src="../../images/work/mise-en-place/flyer/flyer-v1.png" alt="Flyer design, version one, red header only">
+                        <img src="../../images/work/mise-en-place/flyer-v1.jpg" alt="Diseño de volante, versión uno, franja roja solo en el encabezado">
                         <figcaption>Versión 1 — franja roja solo en el encabezado</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/work/mise-en-place/flyer/flyer-v2.png" alt="Flyer design, version two, red header and footer">
+                        <img src="../../images/work/mise-en-place/flyer-v2.jpg" alt="Diseño de volante, versión dos, franja roja en encabezado y pie de página">
                         <figcaption>Versión 2 — franja roja en encabezado y pie de página (seleccionada)</figcaption>
                     </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIGITAL DISPLAY -->
+        <section class="case-section" id="digital-display">
+            <div class="container">
+                <h2>Una pantalla de TV construida con el mismo sistema.</h2>
+                <p class="case-copy">
+                    Más allá de lo impreso, el food truck tiene un menú en
+                    video en bucle en una pantalla de TV montada — la
+                    misma marca, el mismo estilo de fotografía, animado
+                    para captar la atención a unos pasos de distancia.
+                </p>
+
+                <div class="case-video-wrap">
+                    <iframe
+                        src="https://www.youtube.com/embed/exnD0fI1E28"
+                        title="Pantalla de menú de TV de Mise en Place"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        loading="lazy"
+                    ></iframe>
                 </div>
             </div>
         </section>
