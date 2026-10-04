@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Alcala Digital Solutions</title>
+
+    <meta
+        name="description"
+        content="Empieza un proyecto de branding, impresión, digital o web con Alcala Digital Solutions."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+
+            <a href="index.html" class="brand">
+                <span><img src="../images/A-logo-cropped.png" alt="Logo de Alcala Digital Solutions" class="header-logo"></span>
+                <span class="brand-text">
+                    <strong>ALCALA</strong>
+                    <small>DIGITAL SOLUTIONS</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="services.html">Servicios</a>
+                <a href="work.html">Trabajo</a>
+                <a href="about.html">Nosotros</a>
+            </nav>
+
+            <div class="language-switcher">
+                <a href="../contact.html" class="language-link">English <span>→</span></a>
+            </div>
+
+            <a href="contact.html" class="btn btn-small active">Empezar un Proyecto</a>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Empecemos un proyecto.</h1>
+                <p>
+                    Cuéntame un poco sobre tu negocio y lo que buscas
+                    crear. Te responderé dentro de un par de días
+                    hábiles.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- FORM -->
+        <section class="contact-section">
+            <div class="container contact-grid">
+
+                <div>
+                    <form id="contact-form">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="full-name">Nombre Completo</label>
+                                <input type="text" id="full-name" name="full-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="business-name">Nombre del Negocio <span class="optional">(opcional)</span></label>
+                                <input type="text" id="business-name" name="business-name">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Número de Teléfono <span class="optional">(opcional)</span></label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>¿Qué te interesa? <span class="optional">(selecciona todo lo que aplique)</span></label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interest" value="Brand Identity">
+                                    Identidad de Marca
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interest" value="Print & Signage">
+                                    Impresión y Señalización
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interest" value="Digital Displays">
+                                    Pantallas Digitales
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interest" value="Web Design">
+                                    Diseño Web
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interest" value="Online Ordering / POS Setup">
+                                    Pedidos en Línea / Configuración de POS
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="interest" value="Not sure yet">
+                                    Aún no lo sé
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget">Presupuesto Estimado <span class="optional">(opcional)</span></label>
+                                <select id="budget" name="budget">
+                                    <option value="">Elegir</option>
+                                    <option value="Under $500">Menos de $500</option>
+                                    <option value="$500 – $1,500">$500 – $1,500</option>
+                                    <option value="$1,500 – $3,000">$1,500 – $3,000</option>
+                                    <option value="$3,000+">$3,000+</option>
+                                    <option value="Not sure yet">Aún no lo sé</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="heard-from">¿Cómo te enteraste de mí? <span class="optional">(opcional)</span></label>
+                                <input type="text" id="heard-from" name="heard-from">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Cuéntame sobre tu negocio y tu proyecto</label>
+                            <textarea id="message" name="message" required placeholder="¿A qué se dedica tu negocio y qué esperas crear?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn" id="submit-btn">
+                            Enviar Consulta <span>→</span>
+                        </button>
+
+                        <p class="contact-submit-note">
+                            Normalmente respondo dentro de 1–2 días hábiles.
+                        </p>
+
+                        <div class="form-status" id="form-status"></div>
+
+                    </form>
+                </div>
+
+                <div>
+                    <div class="contact-info-card">
+                        <h3>Contacto Directo</h3>
+
+                        <div class="contact-info-row">
+                            <span class="label">CORREO</span>
+                            <span class="value"><a href="mailto:AlcalaDigitalSolutions@outlook.com">AlcalaDigitalSolutions@outlook.com</a></span>
+                        </div>
+
+                        <div class="contact-info-row">
+                            <span class="label">UBICACIÓN</span>
+                            <span class="value">Sheboygan, Wisconsin — trabajando en persona localmente y a distancia en otros lugares</span>
+                        </div>
+
+                        <div class="contact-info-row">
+                            <span class="label">IDIOMAS</span>
+                            <span class="value">Inglés y Español</span>
+                        </div>
+
+                        <div class="contact-info-row">
+                            <span class="label">TIEMPO DE RESPUESTA</span>
+                            <span class="value">1–2 días hábiles</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="brand footer-brand">
+                    <span><img src="../images/A-logo-cropped.png" alt="Logo de Alcala Digital Solutions" class="footer-logo"></span>
+                    <span class="brand-text">
+                        <strong>ALCALA</strong>
+                        <small>DIGITAL SOLUTIONS</small>
+                    </span>
+                </a>
+                <nav class="footer-nav">
+                    <a href="index.html">Inicio</a>
+                    <a href="services.html">Servicios</a>
+                    <a href="work.html">Trabajo</a>
+                    <a href="about.html">Nosotros</a>
+                    <a href="contact.html">Contacto</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Alcala Digital Solutions. Todos los derechos reservados.</p>
+                <p>Branding • Diseño • Digital</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--
+        ============================================================
+        ENVÍO DEL FORMULARIO — SE COMPARTE CON contact.html (inglés)
+
+        Este formulario usa el MISMO Google Form que la versión en
+        inglés (../contact.html), para que todas las consultas — en
+        cualquier idioma — lleguen a una sola hoja de cálculo. Usa
+        exactamente los mismos valores GOOGLE_FORM_ID y ENTRY.* que
+        configures ahí; no crees un segundo Google Form para esta
+        página.
+
+        Las opciones de "¿Qué te interesa?" envían su valor en inglés
+        (Brand Identity, Print & Signage, etc.) aunque se muestren en
+        español — así la columna de la hoja de cálculo se mantiene
+        consistente sin importar el idioma en que alguien haya
+        llenado el formulario.
+        ============================================================
+    -->
+    <script>
+        (function () {
+            var GOOGLE_FORM_ID = "1FAIpQLSf7rmeiJTleSZNsdLAlMGHVdv4YiYAt12EOqHpawn8_blo0Rg";
+            var ENTRY = {
+                fullName: "535504385",
+                businessName: "1964575862",
+                email: "556554723",
+                phone: "2088966482",
+                interest: "1144311049",
+                budget: "274391227",
+                heardFrom: "2057091730",
+                message: "2031571982"
+            };
+
+            var form = document.getElementById("contact-form");
+            var statusBox = document.getElementById("form-status");
+            var submitBtn = document.getElementById("submit-btn");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                var isConfigured = GOOGLE_FORM_ID.indexOf("GOOGLE_FORM_ID") === -1;
+
+                if (!isConfigured) {
+                    statusBox.className = "form-status error";
+                    statusBox.textContent =
+                        "Este formulario aún no está conectado — revisa las instrucciones de configuración en el código fuente de la página para terminar de conectarlo a un Google Form.";
+                    return;
+                }
+
+                var interests = Array.prototype.slice
+                    .call(form.querySelectorAll('input[name="interest"]:checked'))
+                    .map(function (el) { return el.value; })
+                    .join(", ");
+
+                var data = new FormData();
+                data.append("entry." + ENTRY.fullName, form["full-name"].value);
+                data.append("entry." + ENTRY.businessName, form["business-name"].value);
+                data.append("entry." + ENTRY.email, form["email"].value);
+                data.append("entry." + ENTRY.phone, form["phone"].value);
+                data.append("entry." + ENTRY.interest, interests);
+                data.append("entry." + ENTRY.budget, form["budget"].value);
+                data.append("entry." + ENTRY.heardFrom, form["heard-from"].value);
+                data.append("entry." + ENTRY.message, form["message"].value);
+
+                var actionUrl =
+                    "https://docs.google.com/forms/d/e/" + GOOGLE_FORM_ID + "/formResponse";
+
+                submitBtn.disabled = true;
+
+                fetch(actionUrl, {
+                    method: "POST",
+                    mode: "no-cors",
+                    body: data
+                })
+                    .then(function () {
+                        statusBox.className = "form-status success";
+                        statusBox.textContent =
+                            "Gracias — tu mensaje ha sido enviado. Te responderé dentro de 1–2 días hábiles.";
+                        form.reset();
+                        submitBtn.disabled = false;
+                    })
+                    .catch(function () {
+                        statusBox.className = "form-status error";
+                        statusBox.textContent =
+                            "Algo salió mal al enviar eso. Intenta de nuevo, o escribe directamente a hello@alcaladigitalsolutions.com.";
+                        submitBtn.disabled = false;
+                    });
+            });
+        })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Work | Alcala Digital Solutions</title>
+
+    <meta
+        name="description"
+        content="Branding, print, digital and web work by Alcala Digital Solutions for small businesses."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <style>
+        .work-lede {
+            max-width: 620px;
+            margin-top: 24px;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .in-progress-strip {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .in-progress-card {
+            padding: 26px;
+            border: 1px dashed var(--border);
+            border-radius: var(--radius-md);
+        }
+
+        .in-progress-card p.tag {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            margin-bottom: 10px;
+        }
+
+        .in-progress-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .in-progress-card p.desc {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 700px) {
+            .in-progress-strip {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+
+            <a href="index.html" class="brand">
+                <span><img src="images/A-logo-cropped.png" alt="Alcala Digital Solutions Logo" class="header-logo"></span>
+                <span class="brand-text">
+                    <strong>ALCALA</strong>
+                    <small>DIGITAL SOLUTIONS</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="work.html" class="active">Work</a>
+                <a href="about.html">About</a>
+            </nav>
+
+            <div class="language-switcher">
+                <a href="es/work.html" class="language-link">Español <span>→</span></a>
+            </div>
+
+            <a href="contact.html" class="btn btn-small">Start a Project</a>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- WORK HERO -->
+        <section class="work-hero">
+            <div class="container work-hero-grid">
+                <div>
+                    <h1>Work built for <span>real businesses.</span></h1>
+                </div>
+                <div class="work-hero-copy">
+                    <p class="work-lede">
+                        A branding, print and web project for a local food
+                        truck — one build, shown in full, rather than a
+                        gallery padded out with concepts.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FEATURED CASE STUDY -->
+        <section class="work-project work-project-featured">
+            <div class="container">
+
+                <div class="work-project-top">
+                    <div class="work-project-heading">
+                        <div class="work-project-labels">
+                            <p class="eyebrow">Featured Project</p>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <h2>Mise en Place <span>Kitchen on Wheels</span></h2>
+                    </div>
+                </div>
+
+                <a
+                    href="work/mise-en-place.html"
+                    class="project-cover-link"
+                    aria-label="View Mise en Place case study"
+                >
+                    <div class="project-cover project-cover-featured">
+                        <img
+                            src="images/work/mise-en-place/cover.png"
+                            alt="Mise en Place food truck with updated branding, banner and digital display"
+                        >
+                        <div class="project-cover-overlay">
+                            <span>VIEW CASE STUDY</span>
+                            <span class="project-cover-arrow">↗</span>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="work-project-bottom">
+                    <div class="work-project-meta">
+                        <p>BRANDING</p>
+                        <p>PRINT</p>
+                        <p>DIGITAL</p>
+                        <p>WEB</p>
+                    </div>
+
+                    <div class="work-project-description">
+                        <p>
+                            A connected physical and digital identity for a
+                            local food truck — banner, printed menu,
+                            business cards, a digital menu and a link-hub
+                            site, all built as one consistent system.
+                        </p>
+
+                        <div class="project-location">Sheboygan, Wisconsin</div>
+
+                        <a href="work/mise-en-place.html" class="project-link">
+                            View Case Study <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- IN PROGRESS -->
+        <section class="section">
+            <div class="container">
+                <div class="section-heading section-heading-simple">
+                    <div>
+                        <h2>More on the way.</h2>
+                    </div>
+                </div>
+
+                <div class="in-progress-strip">
+
+                    <div class="in-progress-card">
+                        <p class="tag">IN PROGRESS</p>
+                        <h3>Panchitos Tacos</h3>
+                        <p class="desc">
+                            Branding and print work for a food truck client
+                            — full case study coming once the project wraps.
+                        </p>
+                    </div>
+
+                    <div class="in-progress-card" id="concept-digital-menu">
+                        <p class="tag">CONCEPT</p>
+                        <h3>Restaurant Digital Menu System</h3>
+                        <p class="desc">
+                            An exploration of TV-display menus for
+                            restaurants, combining food photography with
+                            promotional content.
+                        </p>
+                        <a href="https://youtu.be/7kRHoqa5X-c" class="text-link" target="_blank" rel="noopener" style="display: inline-block; margin-top: 12px; font-size: 0.85rem;">
+                            Watch Example <span>→</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PORTFOLIO PHILOSOPHY -->
+        <section class="section work-philosophy">
+            <div class="container work-philosophy-grid">
+                <div>
+                    <h2>Built to work <span>together.</span></h2>
+                </div>
+                <div>
+                    <p>
+                        A logo, menu, website or sign should not feel like
+                        separate pieces from different businesses.
+                    </p>
+                    <p>
+                        The goal is a visual system that stays recognizable
+                        wherever customers interact with the brand — in
+                        person, in print or online.
+                    </p>
+                    <a href="services.html" class="project-link">
+                        Explore Services <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <div>
+                        <h2>Your business could<br>be next.</h2>
+                    </div>
+                    <div class="cta-content">
+                        <p>
+                            Tell me about your business and what you're
+                            looking to create.
+                        </p>
+                        <a href="contact.html" class="btn btn-light">
+                            Start a Project <span>→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="brand footer-brand">
+                    <span><img src="images/A-logo-cropped.png" alt="Alcala Digital Solutions Logo" class="footer-logo"></span>
+                    <span class="brand-text">
+                        <strong>ALCALA</strong>
+                        <small>DIGITAL SOLUTIONS</small>
+                    </span>
+                </a>
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Alcala Digital Solutions. All rights reserved.</p>
+                <p>Branding • Design • Digital</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
