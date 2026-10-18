@@ -35,11 +35,12 @@
                 </span>
             </a>
 
-            <nav class="main-nav" aria-label="Main navigation">
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="services.html">Services</a>
                 <a href="work.html">Work</a>
                 <a href="about.html">About</a>
+                <a href="contact.html" class="btn btn-small mobile-cta">Start a Project</a>
             </nav>
 
             <div class="language-switcher">
@@ -48,8 +49,34 @@
 
             <a href="contact.html" class="btn btn-small active">Start a Project</a>
 
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+                <span></span><span></span><span></span>
+            </button>
+
         </div>
     </header>
+
+    <script>
+        (function () {
+            var toggle = document.getElementById("navToggle");
+            var nav = document.getElementById("mainNav");
+            if (!toggle || !nav) return;
+            toggle.addEventListener("click", function () {
+                var isOpen = nav.classList.toggle("is-open");
+                toggle.classList.toggle("is-active", isOpen);
+                toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+                document.body.classList.toggle("nav-locked", isOpen);
+            });
+            nav.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    nav.classList.remove("is-open");
+                    toggle.classList.remove("is-active");
+                    toggle.setAttribute("aria-expanded", "false");
+                    document.body.classList.remove("nav-locked");
+                });
+            });
+        })();
+    </script>
 
 
     <main>
@@ -168,12 +195,12 @@
 
                         <div class="contact-info-row">
                             <span class="label">EMAIL</span>
-                            <span class="value"><a href="mailto:AlcalaDigitalSolutions@outlook.com">AlcalaDigitalSolutions@outlook.com</a></span>
+                            <span class="value"><a href="mailto:hello@alcaladigitalsolutions.com">hello@alcaladigitalsolutions.com</a></span>
                         </div>
 
                         <div class="contact-info-row">
                             <span class="label">LOCATION</span>
-                            <span class="value">Sheboygan, Wisconsin — working in person locally and remotely elsewhere</span>
+                            <span class="value">Milwaukee, Wisconsin — working in person locally and remotely elsewhere</span>
                         </div>
 
                         <div class="contact-info-row">
