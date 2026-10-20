@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TJFR4R140K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJFR4R140K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-TJFR4R140K');
-</script>
+        gtag('config', 'G-TJFR4R140K');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -321,6 +322,14 @@
             var statusBox = document.getElementById("form-status");
             var submitBtn = document.getElementById("submit-btn");
 
+            document.querySelectorAll('a[href^="mailto:"]').forEach(function (link) {
+                link.addEventListener("click", function () {
+                    if (typeof gtag === "function") {
+                        gtag("event", "email_click", { language: "en" });
+                    }
+                });
+            });
+
             form.addEventListener("submit", function (e) {
                 e.preventDefault();
 
@@ -359,6 +368,9 @@
                     body: data
                 })
                     .then(function () {
+                        if (typeof gtag === "function") {
+                            gtag("event", "generate_lead", { form_name: "contact", language: "en" });
+                        }
                         statusBox.className = "form-status success";
                         statusBox.textContent =
                             "Thanks — your message has been sent. I'll get back to you within 1–2 business days.";
